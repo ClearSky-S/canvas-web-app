@@ -19,3 +19,18 @@ if(canvas){
         painting = false;
     })
 }
+
+
+
+// ----------------------------------------------------------------
+
+window.setTimeout(()=>{
+    console.log("Finished");
+    const canvas = document.getElementById('jsCanvas');
+    if(canvas.getContext){
+        var ctx = canvas.getContext('2d');
+    
+    } else {
+        // unsupported
+    }
+})
