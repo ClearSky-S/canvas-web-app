@@ -40,7 +40,8 @@ if(canvas){
     })
 
     document.getElementById('jsClear').addEventListener('click',(event)=>{
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = 'white';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
     })
     document.getElementById('jsSave').addEventListener('click',(event)=>{
         const image = canvas.toDataURL("image/png");
